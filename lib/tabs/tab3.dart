@@ -20,7 +20,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
   List<String> greetings() {
     if (DateTime.now().hour < 12) {
       return ["Good Morning!!", "It's ${DateFormat().format(DateTime.now())}"];
-    } else if (DateTime.now().hour < 6 && DateTime.now().hour >= 12) {
+    } else if (DateTime.now().hour < 18 && DateTime.now().hour >= 12) {
       return [
         "Good Afternoon!!",
         "It's ${DateFormat().format(DateTime.now())}"
